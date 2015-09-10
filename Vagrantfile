@@ -1,6 +1,7 @@
+require_relative 'config.rb'
+
 Vagrant.configure("2") do |config|
 
-	Instance = Struct.new(:region, :ami, :instance_type)
 	instances = MyConfig::AWS[:instances]
 
 	# SETUP 
